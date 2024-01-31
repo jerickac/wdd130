@@ -3,8 +3,8 @@
 :root{
     --primary-color: #0d1b2a;
     --secondary-color: #415a77;
-    --accent-color: #778da9;
-    --additional-accent-color: #e0e1dd;
+    --accent1-color: #778da9;
+    --accent2-color: #e0e1dd;
     --heading-font: 'Rock Salt';
     --paragraph-font: Roboto;
     --nav-background-color: #223;
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header { 
     padding: 20px;
-    background-color: var(--accent-color);
+    background-color: var(--accent1-color);
 }
 
 p{
