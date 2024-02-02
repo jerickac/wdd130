@@ -40,6 +40,7 @@ main img{
 aside{
     width: 50%;
     margin: 10px;
+    position: relative;
 }
 
 aside img {
