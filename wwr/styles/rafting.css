@@ -86,6 +86,7 @@ article {
 .sociallinks img {
     width: 25px;
     margin: -5px;
+    text-decoration: none;
 }
 
 footer p {
