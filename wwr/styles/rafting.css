@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p{
     padding: 25px;
+    font-family: var(--paragraph-font);
 }
 
 nav a{
@@ -66,6 +67,7 @@ article {
     position: absolute;
     bottom: 10%;
 	background: rgba(55, 132, 255, 0.505);
+    font-family: var(--paragraph-font);
 }
 
 .hero article img {
@@ -79,7 +81,16 @@ article {
     font-size: xx-large;
 }
 
+.hero article h2 {
+    color: white;
+    text-align: center;
+}
+
 .sociallinks img {
     width: 25px;
-    margin: 0;
+    margin: -5px;
+}
+
+footer p {
+    margin: -5px;
 }
