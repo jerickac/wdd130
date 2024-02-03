@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rock+Salt&display=swap');
+
+*{
+    color:#0d1b2a;
+    margin: 10px;
+	padding: 0;
+}
+
+:root {
+    --primary-color: #0d1b2a;
+    --secondary-color: #415a77;
+    --accent1-color: #778da9;
+    --accent2-color: #e0e1dd;
+    --heading-font: 'Rock Salt';
+    --paragraph-font: Roboto;
+    --nav-background-color: #223;
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #66fde6;
+    --nav-hover-background-color: #1d2c3f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font),'Bradley Hand', cursive;
+    color: var(--primary-color);
+}
+
+p{
+    padding: 25px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+    
+.hero h1 {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+	top: 10%;
+	background: rgb(0, 0, 0);
+	padding: 0.65rem;
+	box-shadow: 0 0 30px #111;
+	opacity: 0.8;
+    color: var(--accent1-color)
+}
+
+article {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    bottom: 10%;
+	background: rgba(55, 132, 255, 0.505);
+}
+
+.hero article img {
+    float: right;
+    width: 400px;
+    height: auto;
+}
+
+.hero article p{
+    color: white;
+    font-size: xx-large;
+}
+
+.sociallinks img {
+    width: 25px;
+    margin: 0;
+}
