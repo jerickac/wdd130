@@ -39,15 +39,52 @@
                         </div>
                         <div>
                             Address: Sabiás Street, Eusébio-CE
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.916135548875!2d-38.43488538122863!3d-3.828160665720023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c744dabc1535c3%3A0x79d2a04671771de4!2sR.%20dos%20Sabi%C3%A1s%20-%20Cararu%2C%20Eus%C3%A9bio%20-%20CE%2C%2061778-720!5e0!3m2!1sen!2sbr!4v1708183711764!5m2!1sen!2sbr"></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.916135548875!2d-38.43488538122863!3d-3.828160665720023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c744dabc1535c3%3A0x79d2a04671771de4!2sR.%20dos%20Sabi%C3%A1s%20-%20Cararu%2C%20Eus%C3%A9bio%20-%20CE%2C%2061778-720!5e0!3m2!1sen!2sbr!4v1708183711764!5m2!1sen!2sbr"></iframe>
                         </div>
                     </div>
                 </div>
                 <div class="form">
                     <h2>Send us a Message!</h2>
                     <form>
-                        <label for="full_name">Full name</label>
-                        <input type="text" id="full_name" name="full_name">
+                        <fieldset class="contact_information_container">
+                            <legend>Your contact information</legend>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                            <label for="useremail">Email</label>
+                            <input type="email" id="useremail" name="useremail">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Message</legend>
+                            <p>Select the purpose of the message</p>
+                            <div class="purpose">
+                                <div class="each_purpose">
+                                    <input type="radio" id="general_inquiry" name="purpose" value="General Inquiry">
+                                    <label for="general_inquiry">General Inquiry</label>
+                                </div>
+                                <div class="each_purpose">
+                                    <input type="radio" id="reservation_question" name="purpose"
+                                        value="Reservation Question">
+                                    <label for="reservation_question">Reservation Questions</label>
+                                </div>
+                                <div class="each_purpose">
+                                    <input type="radio" name="purpose" id="website_suggestion"
+                                        value="Website Suggestion">
+                                    <label for="website_suggestion">Website Suggestion</label>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <label for="message">Please type the message below:</label>
+                                <textarea id="message" name="message" rows="4"></textarea>
+                            </div>
+                        </fieldset>
+                        <div class="last_row">
+                            <label for="monthly_newsletter">Please subscribe me for the monthly newsletter<input
+                                    type="checkbox" id="monthly_newsletter" name="monthly_newsletter"></label>
+                            <div>
+                                <button type="submit" id="submit" name="submit">Send</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
