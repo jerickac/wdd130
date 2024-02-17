@@ -1,0 +1,133 @@
+/* // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 200 to 700 */
+
+header,
+button {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: navy solid 5px;
+    border-radius: 25px;
+    background-color: #d5d2ff;
+    display: grid;
+    gap: 10px;
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+legend {
+    padding: .5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: .2rem;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+  }
+
+button {
+    margin: 1rem;
+    padding: 10px;
+    width: 20%;
+    background-color: #7d73ff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: .5rem;
+
+}
+
+button:hover {
+    background-color: brown;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 90%;
+    text-align: center;
+    font-size: .8em;
+    color: #000000;
+    border-top: 1px solid #ccc;
+}
+
+.form-items {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
+
+textarea {
+    width: 100%;
+    height: auto;
+}
+
+.textarea {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
