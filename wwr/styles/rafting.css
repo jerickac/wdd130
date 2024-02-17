@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rock+Salt&display=swap');
 
-*{
-    color:#0d1b2a;
-	padding: 0;
+html {
+    width: 100%;
+}
+
+* {
+    color: #0d1b2a;
+    /* padding: 0; */
 }
 
 :root {
@@ -18,12 +22,18 @@
     --nav-hover-background-color: #1d2c3f;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font),'Bradley Hand', cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font), 'Bradley Hand', cursive;
     color: var(--primary-color);
 }
 
-nav a, p{
+nav a,
+p {
     padding: 25px;
     text-decoration: none;
     font-family: var(--paragraph-font);
@@ -38,18 +48,18 @@ nav a, p{
     width: 100%;
     height: auto;
 }
-    
+
 .hero h1 {
     text-align: center;
     box-sizing: border-box;
     padding: 15px;
     position: absolute;
     width: 100%;
-	top: 10%;
-	background: rgb(0, 0, 0);
-	padding: 0.65rem;
-	box-shadow: 0 0 30px #111;
-	opacity: 0.8;
+    top: 10%;
+    background: rgb(0, 0, 0);
+    padding: 0.65rem;
+    box-shadow: 0 0 30px #111;
+    opacity: 0.8;
     color: var(--accent1-color)
 }
 
@@ -62,7 +72,7 @@ article {
     margin-right: 10%;
     position: absolute;
     bottom: 10%;
-	background: rgba(55, 132, 255, 0.505);
+    background: rgba(55, 132, 255, 0.505);
     font-family: var(--paragraph-font);
 }
 
@@ -72,7 +82,7 @@ article {
     height: auto;
 }
 
-.hero article p{
+.hero article p {
     color: white;
     font-size: xx-large;
 }
@@ -103,7 +113,7 @@ header {
 header img {
     width: 100px;
     height: auto;
-    margin: 10px;   
+    margin: 10px;
 }
 
 nav {
@@ -116,14 +126,15 @@ nav {
     display: flex;
 }
 
-.navigation a{
+.navigation a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
 }
 
-.navigation a:link, nav a:visited {
+.navigation a:link,
+nav a:visited {
     color: var(--nav-link-color);
 }
 
@@ -151,28 +162,58 @@ nav {
 }
 
 .adventure_section {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     justify-items: center;
     align-items: center;
+    align-content: center;
+    /* width: 100vh; */
+
+    /* display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center; */
 }
 
 .container_adventure_images {
+    /* display: flex;
+    flex-direction: row; */
+    /* width: 100%; */
+    /* margin: -10px;
+    padding: -10px; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+}
+
+.container_images_contactus {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_images_contactus img{
+    width: 30vh;
+    padding: 10px;
 }
 
 .adventure_section img {
-    width: 25vh;
-    height: auto;
+    width: 100%;
+    /* height: auto;  */
+    /* margin: 0;
+    padding: 0; */
+    /* padding: 50px;
+    margin: -50px; */
+    /* position:relative; */
 }
 
 figure {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
 }
 
 footer {
@@ -189,4 +230,32 @@ footer {
     grid-column: 2/3;
     display: flex;
     justify-content: end;
+}
+
+.contact_us {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_us > h1 {
+    align-self: center;
+}
+
+.contact_us_informationform {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 100px;
+    border: solid black 1px;
+    padding: 10px;
+    background-color: rgb(195, 195, 195);
+}
+
+.form {
+    align-self: center;
+    justify-self: center;
+}
+
+iframe {
+    width:100%;
+    height: auto;
 }
