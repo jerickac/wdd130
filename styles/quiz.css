@@ -1,0 +1,51 @@
+form {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    border-radius: 10px;
+    background-color: rgb(204, 204, 204);
+}
+
+fieldset {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border: black solid;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+.checkboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100px;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: auto;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+
+label,
+p {
+    margin: 0.2rem;
+    padding: .1rem;
+    font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+button,
+select {
+    padding: 10px;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <title>HTM/CSS Quiz</title>
+</head>
+<body>
+    <form>
+        <h1>HTML/CSS Basics Quiz</h1>
+        <fieldset>
+            <legend>HTML Questions</legend>
+            <label for="q1">What is the first tag in an html tag?</label>
+            <input type="text" id="q1" name="q1">
+            <label for="q2">What does HTML stand for?</label>
+            <textarea id="q2" name="q2"></textarea>
+            <label for="q3">What is the tag inside which there is the displayed part of the website?</label>
+            <select id="q3" name="q3">                
+                <option value="main">&lt;main&gt;</option>
+                <option value="body">&lt;body&gt;</option>
+                <option value="html">&lt;html&gt;</option>
+                <option value="header">&lt;header&gt;</option>
+                <option value="" selected disabled>Choose One ...</option>
+            </select>
+            <p>Check only the semantic tags in HTML:</p>
+            <div class="checkboxes">
+                <input type="checkbox" id="header" name="header" value="header">
+                <label for="header">&lt;header&gt;</label>
+                <input type="checkbox" id="div" name="div" value="div">
+                <label for="div">&lt;div&gt;</label>
+                <input type="checkbox" id="main" name="main" value="main">
+                <label for="main">&lt;main&gt;</label>
+                <input type="checkbox" id="html" name="html" value="html">
+                <label for="html">&lt;html&gt;</label>
+                <input type="checkbox" id="footer" name="footer" value="footer">
+                <label for="footer">&lt;footer&gt;</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>CSS Questions</legend>
+            <label for="q4">What is the default value of the CSS margin Property?</label>
+            <input type="number" id="q4" name="q4">
+            <label for="q5">What does CSS stand for?</label>
+            <textarea id="q5" name="q5"></textarea>         
+            <label for="q6">Please type in a CSS rule to set the background of a div to blue</label>
+            <textarea id="q6" name="q6" rows="4" cols="20">    
+            </textarea>    
+        </fieldset>
+        <div class="button">
+        <button type="submit">Check Answers</button>
+        </div>
+    </form>
+</body>
+</html>
