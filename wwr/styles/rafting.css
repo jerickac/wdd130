@@ -27,16 +27,18 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.call_to_action_child {
     font-family: var(--heading-font), 'Bradley Hand', cursive;
     color: var(--primary-color);
 }
 
 nav a,
-p {
+p, .trip_description {
     padding: 25px;
     text-decoration: none;
     font-family: var(--paragraph-font);
+    
 }
 
 .hero {
@@ -265,4 +267,9 @@ footer {
 iframe {
     width:100%;
     height: auto;
+}
+
+figcaption {
+    font-size:larger;
+    font-family: var(--paragraph-font);
 }

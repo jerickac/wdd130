@@ -1,0 +1,94 @@
+.trips_heading_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.trips_heading_child {
+    align-self: center;
+}
+
+/*     --primary-color: #0d1b2a;
+    --secondary-color: #415a77;
+    --accent1-color: #778da9;
+    --accent2-color: #e0e1dd; */
+
+.call_to_action_container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    background: var(--accent1-color);
+    padding: 0.65rem;
+    box-shadow: 0 0 30px #111;
+    opacity: 0.8;
+    color: var(--accent1-color);
+    border-radius: 50px;
+}
+
+.call_to_action_child {
+    display: flex;
+    align-self: center;
+    text-align: center;
+    /* justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; */
+    font-size: xx-large;
+    font-weight: bolder;
+
+    /* box-sizing: border-box;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    background: rgb(0, 0, 0);
+    padding: 0.65rem;
+    box-shadow: 0 0 30px #111;
+    opacity: 0.8;
+    color: var(--accent1-color) */
+}
+
+
+img, .trip_description  {
+    width: 300px;
+    height: auto;
+}
+
+.trip_images_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#available_trips {
+    font-family: var(--paragraph-font);
+    border-collapse: collapse;
+    /* width: 100%; */
+}
+
+#available_trips th, #available_trips td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#available_trips tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+
+#table_title {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#available_trips th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--accent1-color);
+}
+
+
